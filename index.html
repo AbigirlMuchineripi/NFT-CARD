@@ -5,51 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Aby Muc">
     <meta name="description" content="This is an NFT card.">
-    <title>NFT-PREVIEW-CARD</title>
+    <title>NFT Preview Card</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link
+     rel="shortcut icon" 
+     href="./images/favicon-32x32.png"
+     type="image/x-icon"
+     >
 </head>
-<body> 
-    <article>
-        <section class="nft-card">
-            <div class="image-equilibrium">
-                <figure>
-                    <img src="./images/image-equilibrium.jpg" alt="image-equilibrium"
-                    width="604"
-                    height="604"
-                    loading="lazy">
-                    <figcaption class="offscreen">image-equilibrium</figcaption>                
-                </figure>
-            </div>
 
-            <h5>Equilibrium #3429</h5>
+<body> 
+    <article class="nft-card">
+        <section class="nft-card-image">
+            <a href="#">
+                <div class="image-equilibrium-overlay  responsive-image">
+                    <figure>
+                        <img
+                        src="./images/image-equilibrium.jpg" alt="image-equilibrium"
+                        width="604"
+                        height="604"
+                        loading="lazy">
+                        <figcaption class="offscreen">image-equilibrium</figcaption>                
+                    </figure>
+                </div>
+            </a>
+            
+
+            <h1>Equilibrium #3429</h1>
 
             <p class="nft-description">Our Equilibrium collection promotes balance and calm.</p>
+            
+            <div class="group6">
+                <figure class="eth-icon">
+                    <img src="./images/icon-ethereum.svg" alt="icon-ethereum"
+                    width="11"
+                    height="18"
+                    loading="lazy">
+                    <figcaption class="offscreen">ethereum icon</figcaption>
+                </figure>
+                <p class="eth-price">0.041 ETH</p>
+    
+                <figure class="clock-icon">
+                    <img src="./images/icon-clock.svg" alt="clock icon"
+                    width="17"
+                    height="17"
+                    loading="lazy">
+                    <figcaption class="offscreen">clock icon</figcaption>
+                </figure>
+                <p class="days">3 days left</p>
+               
 
-            <figure>
-                <img src="./images/icon-ethereum.svg" alt="icon-ethereum"
-                width="11"
-                height="18"
-                loading="lazy">
-                <figcaption class="offscreen">ethereum icon</figcaption>
-            </figure>
-            <p class="eth-price">0.041 ETH</p>
-
-            <figure>
-                <img src="./images/icon-clock.svg" alt="clock icon">
-                <figcaption class="offscreen">clock icon</figcaption>
-            </figure>
-            <p class="days">3 days left</p>
+            </div>
            
             <div class="line"></div>
 
             <div class="avatar">
-                <figure>
-                    <img src="./images/image-avatar.png" alt="image-avatar">
+                <figure class="avatar-img">
+                    <img src="./images/image-avatar.png" alt="image-avatar"
+                    width="132"
+                    height="132"
+                    loading="lazy">
                     <figcaption class="offscreen">avatar image</figcaption>
                 </figure>
+                <p class="creator-description"><span>Creation of </span>Jules Wyvern</p>          
             </div>
-            <p class="creator-description"><span>Creation of </span>Jules Wyvern</p>          
+            
 
         </section>
     </article>   
