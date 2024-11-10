@@ -27,6 +27,16 @@ img {
 
   /* TYPOGRAPHY */
   --ff: "Outfit",sans-serif;
+
+  /*Mobile*/
+
+  /*Desktop*/
+  --heading: 600 1.38rem var(--ff);
+  --body: 300 1.13rem/1.63rem;
+  --caption: normal 1rem var(--ff);
+  --caption-bold: normal 1rem var(--ff);
+  
+  /*Desktop Active*/
 }
 
 /* || UTILITY CLASSES */
