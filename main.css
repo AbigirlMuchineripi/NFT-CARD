@@ -76,8 +76,7 @@ body {
   background-color: var(--dark-blue-mainbg);
 }
 
-h1,
-h2 {
+h1 {
   margin: 0;
   padding: 0;
   font-size: inherit;
@@ -132,12 +131,12 @@ a:any-link {
   color:var(--white);
 }
 .nft-description{
-    font-family: var(--body);
-    color:var(--soft-blue);
-   max-width:278px;
+  font-family: var(--body);
+  color:var(--soft-blue);
+  max-width:278px;
 }
 .card-metadata{
-    display:flex;
+  display:flex;
   align-items:center;
   justify-content:space-between;
 }
@@ -194,7 +193,7 @@ a:any-link {
   width:302px;
   height:302px;
   border-radius:8px;
-  background-color:var(--cyan-op);
+  background-color:var(--cyan);
   position:absolute;
   padding:7.94rem;
 }
