@@ -21,6 +21,7 @@ img {
   --soft-blue: #8BACD9;
   --white : #FFFFFF;
   --cyan : #00FFF8;
+  --cyan-op: hsla(178, 100%, 50%,0.503);
   --dark-blue-mainbg: #0D192C;
   --dark-blue-cardbg:#15263F;
   --dark-blue-line:#2E405A;
@@ -28,15 +29,17 @@ img {
   /* TYPOGRAPHY */
   --ff: "Outfit",sans-serif;
 
-  /*Mobile*/
-  --caption-mob: normal 1rem var(--ff);
-  --caption-bold-mob: 600 1rem var(--ff);
-
   /*Desktop*/
   --heading: 600 1.38rem var(--ff);
   --body: 300 1.13rem/1.63rem;
   --caption: normal 1rem var(--ff);
   --caption-bold: normal 1rem var(--ff);
+
+  /*Mobile*/
+  --caption-mob: normal 1rem var(--ff);
+  --caption-bold-mob: 600 1rem var(--ff);
+
+  
 
   /*Shadow*/
   --shadow:--SHADOW: 0px 25px 50px 0px hsla(0, 0%, 0%, 0.0953);
@@ -72,11 +75,12 @@ body {
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
+  place-content: center;
   display: grid;  
   background-color: var(--dark-blue-mainbg);
 }
 
-h1 {
+h1, h2 {
   margin: 0;
   padding: 0;
   font-size: inherit;
@@ -85,7 +89,7 @@ h1 {
 
 a:any-link {
   text-decoration: none;
-  color: black;
+
 }
 
 /* NFT Card*/
@@ -105,7 +109,7 @@ a:any-link {
    height:278px;
    border-radius: 8px;
    overflow: hidden;
-   position:relative;
+   position: relative;
 }
 .nft-card-image img{
     width:100%;
@@ -131,7 +135,7 @@ a:any-link {
   color:var(--white);
 }
 .nft-description{
-  font-family: var(--body);
+  font: var(--body);
   color:var(--soft-blue);
   max-width:278px;
 }
@@ -140,18 +144,25 @@ a:any-link {
   align-items:center;
   justify-content:space-between;
 }
-.metadata-item-value,
+.metadata-item-value{
+  display:flex;
+  align-items:center;
+  gap:0.38rem;
+  color:var(--soft-blue);
+  font:var(--caption-mob);
+}
 .metadata-item-time{
   display:flex;
   align-items:center;
   gap:0.5rem;
   color:var(--soft-blue);
   font:var(--caption-mob);
+  
 }
 .line{
   width:100%;
   height:1px;
-  color: var(--white);
+  background-color: var(--dark-blue-line);
 }
 .creator{
   display:flex;
@@ -180,7 +191,8 @@ a:any-link {
 /*Tablet*/
 @media screen and (min-width:768px) {
   /* ||NFT-Card*/
-  max-width:350px;
+  .nft-card{
+  max-width: 350px;
   min-height:596px;
   padding:1.5rem 1.5rem 2rem 1.5rem;
   margin:9.5rem 34.06rem;
@@ -194,14 +206,14 @@ a:any-link {
   width:302px;
   height:302px;
   border-radius:8px;
-  background-color:var(--cyan);
+  background-color:var(--cyan-op);
   position:absolute;
   padding:7.94rem;
 }
 .card-content{
   gap:0px;
 }
-.car-info{
+.card-info{
   gap:1rem;
   margin-bottom:1.5rem;
 }
