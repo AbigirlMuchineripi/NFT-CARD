@@ -178,14 +178,54 @@ a:any-link {
 .creator-description a{
   color:var(--white);
 }
-
-
-.avatar-img{
-   
-    width: 33px;
-    height:33px;
-
+/*Tablet*/
+@media screen and (min-width:768px) {
+  /* ||NFT-Card*/
+  max-width:350px;
+  min-height:596px;
+  padding:1.5rem 1.5rem 2rem 1.5rem;
+  margin:9.5rem 34.06rem;
 }
-span{
-    color: var(--soft-blue);
+/*||NFT-Card-Image*/
+.card-image{
+  width:302px;
+  height:302px;
 }
+.nft-card-image-overlay{
+  width:302px;
+  height:302px;
+  border-radius:8px;
+  background-color:var(--cyan-op);
+  position:absolute;
+  padding:7.94rem;
+}
+.card-content{
+  gap:0px;
+}
+.car-info{
+  gap:1rem;
+  margin-bottom:1.5rem;
+}
+.nft-description{
+  max-width:302px;
+}
+.card-metadata{
+  margin-bottom:1.5rem;
+}
+.metadata-item-value{
+  font:var(--caption-bold);
+}
+.metadata-item-time{
+  font: var(--caption);
+}
+.line{
+  margin-bottom:1rem;
+}
+.creator-description{
+  font:var(--caption);
+  }
+}
+
+  
+
+
