@@ -225,6 +225,28 @@ a:any-link {
   }
 }
 
+/*Desktop*/
+@media screen and (min-width:992px){
+  .nft-card-image:hover
+  .nft-card-image-overlay,
+  .nft-card-image:focus-visible
+  .nft-card-image-overlay{
+    display:block;
+  }
+  .card-title:hover,
+  .card-title:focus-visible{
+    color:var(--cyan);
+  }
+  .creator-description a:hover,
+  .creator-description a:focus-visible{
+    color:var(--cyan);
+  }
+}  
+  
+  
+  
+    
+
   
 
 
