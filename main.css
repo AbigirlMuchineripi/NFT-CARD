@@ -149,29 +149,37 @@ a:any-link {
   color:var(--soft-blue);
   font:var(--caption-mob);
 }
-.eth-icon{
-    width: 11px;
-    height: 18px;
-}
-.eth-price{
-    color: var(--cyan);
-    font-family: var(--caption-bold-mob);
-    
-}
-.clock-icon{
-    width: 17px;
-    height:17px;
-}
-.days{
-    color:var(--soft-blue);
-  
-}
 .line{
-    color: var(--dark-blue-line);
-    width:278px;
-    height:1px;
-    align-items: center;
+  width:100%;
+  height:1px;
+  color: var(--dark-blue-line);
 }
+.creator{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+.avatar-creator{
+  width:33px;
+  height:33px;
+  border-radius:50%;
+  border:1px solid var(--white);
+  overflow:hidden;
+}
+.avatar-creatorimg{
+  width:100%;
+  height:100%;
+  object-fit:cover;  
+}
+.creator-description{
+  color:var(--soft-blue);
+  font:var(--caption-mob); 
+}
+.creator-description a{
+  color:var(--white);
+}
+
+
 .avatar-img{
    
     width: 33px;
