@@ -239,9 +239,9 @@ a:any-link {
 
 /*Desktop*/
 @media screen and (min-width:992px){
-  .nft-card-image:hover
+  .nft-card-image:hover,
   .nft-card-image-overlay,
-  .nft-card-image:focus-visible
+  .nft-card-image:focus-visible,
   .nft-card-image-overlay{
     display:block;
   }
