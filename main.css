@@ -123,26 +123,31 @@ a:any-link {
   flex-flow:column;
   gap:1rem;
 }
-
-h1{
-    font-family: var(--caption-bold-mob);
-    color: var(--white);
-    padding-top: 24px ;
-    padding-bottom: 12px;
-    width: 278px;
-    height: 28px;      
-    
+.card-info{
+  display:flex;
+  flex-flow:column;
+  gap:0.75rem;
+}
+.card-title{
+  font:var(--heading);
+  color:var(--white);
 }
 .nft-description{
-    width: 278px;
-    height: 52px;
-    font-family: var(--caption-mob);
+    font-family: var(--body);
     color:var(--soft-blue);
-    padding-bottom: 16px;
+   max-width:278px;
 }
-.group6{
-    width: 278px;
-    height: 19px;
+.card-metadata{
+    display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.metadata-item-value{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  color:var(--soft-blue);
+  font:var(--caption-mob);
 }
 .eth-icon{
     width: 11px;
