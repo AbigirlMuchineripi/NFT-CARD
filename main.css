@@ -140,7 +140,8 @@ a:any-link {
   align-items:center;
   justify-content:space-between;
 }
-.metadata-item-value{
+.metadata-item-value,
+.metadata-item-time{
   display:flex;
   align-items:center;
   gap:0.5rem;
@@ -150,7 +151,7 @@ a:any-link {
 .line{
   width:100%;
   height:1px;
-  color: var(--dark-blue-line);
+  color: var(--white);
 }
 .creator{
   display:flex;
@@ -164,7 +165,7 @@ a:any-link {
   border:1px solid var(--white);
   overflow:hidden;
 }
-.avatar-creatorimg{
+.avatar-creator img{
   width:100%;
   height:100%;
   object-fit:cover;  
