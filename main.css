@@ -138,6 +138,7 @@ a:any-link {
   font: var(--body);
   color:var(--soft-blue);
   font:var(--caption-mob);
+  letter-spacing: 1px;
   max-width:278px;
  
 }
