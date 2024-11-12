@@ -136,8 +136,7 @@ a:any-link {
 }
 .nft-description{
   font: var(--body);
-  color:var(--soft-blue);
-  font:var(--caption-mob);
+  color:var(--soft-blue); 
   letter-spacing: 0px;
   line-height: 26px;
   max-width:278px;
