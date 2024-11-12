@@ -137,6 +137,7 @@ a:any-link {
 .nft-description{
   font: var(--body);
   color:var(--soft-blue);
+  
   max-width:278px;
 }
 .card-metadata{
@@ -148,8 +149,8 @@ a:any-link {
   display:flex;
   align-items:center;
   gap:0.38rem;
-  color:var(--soft-blue);
-  font:var(--caption-mob);
+  color:var(--cyan);
+  font: var(--caption-bold-mob);
 }
 .metadata-item-time{
   display:flex;
@@ -226,6 +227,7 @@ a:any-link {
 }
 .metadata-item-value{
   font:var(--caption-bold);
+ 
 }
 .metadata-item-time{
   font: var(--caption);
