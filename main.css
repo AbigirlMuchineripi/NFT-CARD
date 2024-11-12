@@ -36,7 +36,7 @@ img {
   --caption-bold: normal 1rem var(--ff);
 
   /*Mobile*/
-  --caption-mob: normal 1rem var(--ff);
+  --caption-mob: normal 1.13rem var(--ff);
   --caption-bold-mob: 600 1rem var(--ff);
 
   
@@ -137,8 +137,9 @@ a:any-link {
 .nft-description{
   font: var(--body);
   color:var(--soft-blue);
-  
+  font:var(--caption-mob);
   max-width:278px;
+ 
 }
 .card-metadata{
   display:flex;
