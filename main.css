@@ -37,6 +37,7 @@ img {
 
   /*Mobile*/
   --caption-mob: normal 1.13rem var(--ff);
+  --caption-mob1: normal 0.94rem var(--ff);
   --caption-bold-mob: 600 1rem var(--ff);
 
   
@@ -159,7 +160,7 @@ a:any-link {
   align-items:center;
   gap:0.5rem;
   color:var(--soft-blue);
-  font:var(--caption-mob);
+  font:var(--caption-mob1);
   
 }
 .line{
