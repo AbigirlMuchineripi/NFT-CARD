@@ -36,7 +36,8 @@ img {
   --caption-bold: normal 1rem var(--ff);
 
   /*Mobile*/
-  --caption-mob: normal 1rem var(--ff);
+  --caption-mob: normal 1.13rem var(--ff);
+  --caption-mob1: normal 0.94rem var(--ff);
   --caption-bold-mob: 600 1rem var(--ff);
 
   
@@ -135,9 +136,12 @@ a:any-link {
   color:var(--white);
 }
 .nft-description{
-  font: var(--body);
-  color:var(--soft-blue);
+  font: var(--caption-mob);
+  color:var(--soft-blue); 
+  letter-spacing: 0px;
+  line-height: 26px;
   max-width:278px;
+ 
 }
 .card-metadata{
   display:flex;
@@ -148,15 +152,15 @@ a:any-link {
   display:flex;
   align-items:center;
   gap:0.38rem;
-  color:var(--soft-blue);
-  font:var(--caption-mob);
+  color:var(--cyan);
+  font: var(--caption-bold-mob);
 }
 .metadata-item-time{
   display:flex;
   align-items:center;
   gap:0.5rem;
   color:var(--soft-blue);
-  font:var(--caption-mob);
+  font:var(--caption-mob1);
   
 }
 .line{
@@ -226,6 +230,7 @@ a:any-link {
 }
 .metadata-item-value{
   font:var(--caption-bold);
+ 
 }
 .metadata-item-time{
   font: var(--caption);
