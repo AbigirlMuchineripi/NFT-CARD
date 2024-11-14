@@ -238,28 +238,29 @@ a:any-link {
   }
 }
 
-/*Desktop*/
-@media screen and (min-width:992px){
-  .nft-card-image:hover,
-  .nft-card-image-overlay,
-  .nft-card-image:focus-visible,
-  .nft-card-image-overlay{
-    display:block;
+/* Desktop */
+@media screen and (min-width: 992px) {
+  .nft-card-image {
+    position: relative;
   }
+
+  /*Cyan overlay on image hover */
+  .nft-card-image:hover .nft-card-image-overlay {
+    display: flex;
+    background-color: var(--cyan-op);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   .card-title:hover,
-  .card-title:focus-visible{
-    color:var(--cyan);
-  }
   .creator-description a:hover,
-  .creator-description a:focus-visible{
+  .card-title:focus-visible,
+  .creator-description a:focus-visible {
     color:var(--cyan);
   }
-}  
-  
-  
-  
-    
-
-  
-
-
+}
